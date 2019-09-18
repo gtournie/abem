@@ -1,0 +1,45 @@
+{
+  "name": "abem",
+  "version": "1.0.0",
+  "description": "ABEM class name generator",
+  "main": "index.js",
+  "scripts": {
+    "check:src": "npm run test",
+    "lint": "eslint index.js",
+    "test": "nyc --reporter=lcov --reporter=text mocha -- --recursive __tests__/*.js --full-trace",
+    "pretest": "npm run lint",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": ">= 8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtournie/abem.git"
+  },
+  "keywords": [
+    "abem",
+    "naming",
+    "class",
+    "css",
+    "jsx",
+    "babel-plugin-transform-jsx-abem"
+  ],
+  "author": "Tournier Guillaume <tournier.guillaume@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gtournie/abem/issues"
+  },
+  "homepage": "https://github.com/gtournie/abem#readme",
+  "devDependencies": {
+    "coveralls": "3.0.6",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "mocha": "6.2.0",
+    "nyc": "14.1.1"
+  }
+}
