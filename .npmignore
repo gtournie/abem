@@ -1,0 +1,10 @@
+examples
+coverage
+.babelrc
+.eslint*
+.idea
+.npmignore
+.travis.yml
+.history
+.nyc_output
+console.d.ts
